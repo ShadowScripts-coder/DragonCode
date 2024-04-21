@@ -1,0 +1,63 @@
+<!DOCTYPE html lang=cy>
+<link rel="stylesheet" href="styles.css">
+
+<script src="../../../pageSwitcher.js"></script>
+<div class="wrapper">
+    <h1 class="python">PyGame</h1>
+    <div class="mainContent">
+        <h2>PyGame yw'r pecyn sy'n galluogi chi i chreu gemau yn python! Beth am cychwyn efo symud cylch?</h2>
+        <div class="codeWrapper">
+            <h2 class="codeHeader">       I cychwyn, mae angen creu'r cylch ar y sgrin a'r newidynnau       </h2>
+            <div class="code">
+                <h3 class="code"><span class="lineNumber">1. </span>import pygame</h3>
+                <h3 class="code"><span class="lineNumber">2. </span>pygame.init()</h3>
+                <h3 class="code"><span class="lineNumber">3. </span>sgrin = pygame.display.set_mode((1280, 720)) <span class="comment">#Dweud i'r rhaglen pa cydraniad i fod!</span><br>
+                <span class="lineNumber">4. </span>clock = pygame.time.Clock()<br>
+                <span class="lineNumber">5. </span>rhedeg = True<br>
+                <span class="lineNumber">6. </span>dt = 5 <span class="comment">#Mae angen hon i'r amseru</span></h3>
+                <h3 class="code"><span class="lineNumber">7. </span>lleoliad_chwaraewyr = pygame.Vector2(sgrin.get_width()/2, sgrin.get_height()/2)</h3>
+                <h3 class="code"><span class="lineNumber">8. </span>while rhedeg:<br>
+                <span class="lineNumber">9. </span>  for digwyddiad in pygame.event.get():<br>
+                <span class="lineNumber">10. </span>    if digwyddiad.type == pygame.QUIT:<br>
+                <span class="lineNumber">11. </span>      rhedeg = False<br>
+                <span class="lineNumber">12. </span>  sgrin.fill('purple')<br>
+                <span class="lineNumber">13. </span>  pygame.draw.circle(sgrin, 'red', lleoliad_chwaraewyr, 40)<br>
+                <span class="lineNumber">14. </span>  allweddi = pygame.key.get_pressed()</h3>
+                <h3 class="code"><span class="lineNumber">15. </span>  pygame.display.flip()</h3>
+                <h3 class="code"><span class="lineNumber">16. </span>  clock.tick(60) / 1000</h3>
+                <h3 class="code"><span class="lineNumber">17. </span>pygame.quit()</h3>
+            </div>
+        </div>
+        <div class="codeWrapper" style="margin-top: 10px;">
+            <h2 class="codeHeader">       Nawr i wneud i'r cylch symud!        </h2>
+            <div class="code">
+                <h3 class="code"><span class="lineNumber">1. </span>import pygame</h3>
+                <h3 class="code"><span class="lineNumber">2. </span>pygame.init()</h3>
+                <h3 class="code"><span class="lineNumber">3. </span>sgrin = pygame.display.set_mode((1280, 720)) <span class="comment">#Dweud i'r rhaglen pa cydraniad i fod!</span><br>
+                <span class="lineNumber">4. </span>clock = pygame.time.Clock()<br>
+                <span class="lineNumber">5. </span>rhedeg = True<br>
+                <span class="lineNumber">6. </span>dt = 5 <span class="comment">#Mae angen hon i'r amseru</span></h3>
+                <h3 class="code"><span class="lineNumber">7. </span>lleoliad_chwaraewyr = pygame.Vector2(sgrin.get_width()/2, sgrin.get_height()/2)</h3>
+                <h3 class="code"><span class="lineNumber">8. </span>while rhedeg:<br>
+                <span class="lineNumber">9. </span>  for digwyddiad in pygame.event.get():<br>
+                <span class="lineNumber">10. </span>    if digwyddiad.type == pygame.QUIT:<br>
+                <span class="lineNumber">11. </span>      rhedeg = False<br>
+                <span class="lineNumber">12. </span>  sgrin.fill('purple')<br>
+                <span class="lineNumber">13. </span>  pygame.draw.circle(sgrin, 'red', lleoliad_chwaraewyr, 40)<br>
+                <span class="lineNumber">14. </span>  allweddi = pygame.key.get_pressed()<br>
+                <span class="lineNumber">15. </span>  if allweddi[pygame.K_w]:<br>
+                <span class="lineNumber">16. </span>    lleoliad_chwaraewyr.y -= 300 * dt<br>
+                <span class="lineNumber">17. </span>  if allweddi[pygame.K_s]:<br>
+                <span class="lineNumber">18. </span>    lleoliad_chwaraewyr.y += 300 * dt<br>
+                <span class="lineNumber">19. </span>  if allweddi[pygame.K_a]:<br>
+                <span class="lineNumber">20. </span>    lleoliad_chwaraewyr.x -= 300 * dt<br>
+                <span class="lineNumber">21. </span>  if allweddi[pygame.K_d]:<br>
+                <span class="lineNumber">22. </span>    lleoliad_chwaraewyr.x += 300 * dt</h3>
+                <h3 class="code"><span class="lineNumber">23. </span>  pygame.display.flip()</h3>
+                <h3 class="code"><span class="lineNumber">24. </span>  dt = clock.tick(60) / 1000</h3>
+                <h3 class="code"><span class="lineNumber">25. </span>pygame.quit()</h3>
+            </div>
+        </div>
+        <h2 class="prevPage" onclick="changeLang('cy/py/3')">Tudalen cynt</h2>
+    </div>
+</div>

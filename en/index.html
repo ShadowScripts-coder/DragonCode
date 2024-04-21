@@ -1,45 +1,60 @@
-<!DOCTYPE html lang=en>
+<!DOCTYPE html lang=cy>
 <script src="../pageSwitcher.js"></script>
-<div class="title"><h1 class="title">DragonCode</h1></div>
-<div class="lang">
-    <h2 class="cy" onclick="changeLang('cy')">Cymraeg</h2>
-    <h2 class="en" onclick="changeLang('en')">English</h2>
+<div class="wrapper">
+    <div class="title"><h1 class="title">DragonCode</h1></div>
+    <div class="lang">
+        <h2 class="cy" onclick="changeLang('cy', 1)">Cymraeg</h2>
+        <h2 class="en">English</h2>
+    </div>
+    <div class="prLang">
+        <h2 class="prtitle"><u>Languages</u></h2>
+        <h2 class="python">Python</h2>
+    </div>
 </div>
 <style>
     body {
+        font-family: sans-serif;
         user-select: none;
-        background-color: #453535;
+        background-color: #352525;
+    }
+    div.wrapper {
+        margin: auto;
+        border-color: #453535;
+        border-width: 5px;
+        border-style: solid;
+        background-color: #554545;
+        width: 900px;
+        padding: 10px;
+        border-radius: 20px;
     }
     h1.title {
         margin-top: 5px;
     }
     div.title {
-        border-color: #554545;
+        border-color: #655555;
         border-width: 5px;
         height: 65px;
         border-style: solid;
-        background-color: #655555;
+        background-color: #756565;
         color: white;
-        font-family: sans-serif;
         font-weight: 500;
         font-size: 25;
         text-align: center;
-        border-radius: 15px;
-        width: 50%;
+        border-radius: 20px;
+        width: 700px;
         margin: auto;
     }
     div.lang {
-        font-family: sans-serif;
         margin-top: 5px;
         padding: 5px;
         display: flex;
-        background-color: #655555;
-        border-color: #554545;
+        background-color: #756565;
+        border-color: #655555;
         border-width: 5px;
         border-style: solid;
-        border-radius: 15px;
-        width: 20%;
-        margin-left: 54.2%;
+        border-radius: 20px;
+        width: 275px;
+        margin-left: 510px;
     }
     h2.cy {
         margin: auto;
@@ -48,7 +63,7 @@
         padding: 5px;
         border-width: 5px;
         border-style: solid;
-        border-radius: 15px;
+        border-radius: 20px;
     }
     h2.en {
         margin: auto;
@@ -57,6 +72,39 @@
         padding: 5px;
         border-width: 5px;
         border-style: solid;
-        border-radius: 15px;
+        border-radius: 20px;
+    }
+    div.prLang {
+        background-color: #756565;
+        border-color: #655555;
+        border-width: 5px;
+        border-radius: 20px;
+        border-style: solid;
+        width: 400px;
+        text-align: center;
+        padding: 10px;
+    }
+    h2.prTitle {
+        color: white;
+        font-size: 35;
+        margin-top: 5px;
+        border-radius: 20px;
+        border-width: 5px;
+        border-style: solid;
+        background-color: #655555;
+        border-color: #706060;
+        width: 50%;
+        margin: auto;
+    }
+    h2.python {
+        background-color: #0000f0;
+        border-color: #0000d0;
+        border-width: 5px;
+        border-radius: 20px;
+        padding: 5px;
+        border-style: solid;
+        width: 35%;
+        margin: auto;
+        margin-top: 10px;
     }
 </style>
