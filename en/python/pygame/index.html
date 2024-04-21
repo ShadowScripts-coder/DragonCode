@@ -1,0 +1,63 @@
+<!DOCTYPE html lang=cy>
+<link rel="stylesheet" href="styles.css">
+
+<script src="../../../pageSwitcher.js"></script>
+<div class="wrapper">
+    <h1 class="python">PyGame</h1>
+    <div class="mainContent">
+        <h2>PyGame is the package that allows you to create games in python! How about we start with moving a circle?</h2>
+        <div class="codeWrapper">
+            <h2 class="codeHeader"> To start, we need to create the circle on the screen and the variables </h2>
+            <div class="code">
+                <h3 class="code"><span class="lineNumber">1. </span>import pygame</h3>
+                <h3 class="code"><span class="lineNumber">2. </span>pygame.init()</h3>
+                <h3 class="code"><span class="lineNumber">3. </span>screen = pygame.display.set_mode((1280, 720)) <span class="comment">#Tell the program what resolution to be!</span><br>
+                <span class="lineNumber">4. </span>clock = pygame.time.Clock()<br>
+                <span class="lineNumber">5. </span>running = True<br>
+                <span class="lineNumber">6. </span>dt = 5 <span class="comment">#This is needed for timing</span></h3>
+                <h3 class="code"><span class="lineNumber">7. </span>player_location = pygame.Vector2(screen.get_width()/2, screen.get_height()/2)</h3>
+                <h3 class="code"><span class="lineNumber">8. </span>while running:<br>
+                <span class="lineNumber">9. </span>  for event in pygame.event.get():<br>
+                <span class="lineNumber">10. </span>    if event.type == pygame.QUIT:<br>
+                <span class="lineNumber">11. </span>      running = False<br>
+                <span class="lineNumber">12. </span>  screen.fill('purple')<br>
+                <span class="lineNumber">13. </span>  pygame.draw.circle(screen, 'red', player_location, 40)<br>
+                <span class="lineNumber">14. </span>  keys = pygame.key.get_pressed()</h3>
+                <h3 class="code"><span class="lineNumber">15. </span>  pygame.display.flip()</h3>
+                <h3 class="code"><span class="lineNumber">16. </span>  clock.tick(60) / 1000</h3>
+                <h3 class="code"><span class="lineNumber">17. </span>pygame.quit()</h3>
+            </div>
+        </div>
+        <div class="codeWrapper" style="margin-top: 10px;">
+            <h2 class="codeHeader">       Now to make the circle move!        </h2>
+            <div class="code">
+                <h3 class="code"><span class="lineNumber">1. </span>import pygame</h3>
+                <h3 class="code"><span class="lineNumber">2. </span>pygame.init()</h3>
+                <h3 class="code"><span class="lineNumber">3. </span>screen = pygame.display.set_mode((1280, 720)) <span class="comment">#Tell the program what resolution to be!</span><br>
+                <span class="lineNumber">4. </span>clock = pygame.time.Clock()<br>
+                <span class="lineNumber">5. </span>running = True<br>
+                <span class="lineNumber">6. </span>dt = 5 <span class="comment">#This is needed for timing</span></h3>
+                <h3 class="code"><span class="lineNumber">7. </span>player_location = pygame.Vector2(screen.get_width()/2, screen.get_height()/2)</h3>
+                <h3 class="code"><span class="lineNumber">8. </span>while running:<br>
+                <span class="lineNumber">9. </span>  for event in pygame.event.get():<br>
+                <span class="lineNumber">10. </span>    if event.type == pygame.QUIT:<br>
+                <span class="lineNumber">11. </span>      running = False<br>
+                <span class="lineNumber">12. </span>  screen.fill('purple')<br>
+                <span class="lineNumber">13. </span>  pygame.draw.circle(screen, 'red', player_location, 40)<br>
+                <span class="lineNumber">14. </span>  keys = pygame.key.get_pressed()<br>
+                <span class="lineNumber">15. </span>  if keys[pygame.K_w]:<br>
+                <span class="lineNumber">16. </span>    player_location.y -= 300 * dt<br>
+                <span class="lineNumber">17. </span>  if keys[pygame.K_s]:<br>
+                <span class="lineNumber">18. </span>    player_location.y += 300 * dt<br>
+                <span class="lineNumber">19. </span>  if keys[pygame.K_a]:<br>
+                <span class="lineNumber">20. </span>    player_location.x -= 300 * dt<br>
+                <span class="lineNumber">21. </span>  if keys[pygame.K_d]:<br>
+                <span class="lineNumber">22. </span>    player_location.x += 300 * dt</h3>
+                <h3 class="code"><span class="lineNumber">23. </span>  pygame.display.flip()</h3>
+                <h3 class="code"><span class="lineNumber">24. </span>  dt = clock.tick(60) / 1000</h3>
+                <h3 class="code"><span class="lineNumber">25. </span>pygame.quit()</h3>
+            </div>
+        </div>
+        <h2 class="prevPage" onclick="changeLang('en/py/3')">Previous page</h2>
+    </div>
+</div>

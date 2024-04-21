@@ -1,0 +1,123 @@
+body {
+    background-color: #050550;
+    font-family: sans-serif;
+    color: #fff;
+    user-select: none;
+}
+
+div.wrapper {
+    width: 900px;
+    background-color: #202070;
+    border-color: #101060;
+    border-width: 5px;
+    height: auto;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+div.codeWrapper {
+    background-color: #252525;
+    border-color: #202020;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+div.mainContent {
+    background-color: #303080;
+    border-color: #252575;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+h1.python {
+    color: #fff;
+    background-color: #0000f0;
+    margin: auto;
+    width: 175px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0000d0;
+}
+
+h2.codeHeader {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #555555;
+}
+
+div.code {
+    user-select: all;
+    border-radius: 10px;
+    background-color: #353535;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h3.code {
+    padding: 5px;
+}
+
+.lineNumber {
+    color: #555555;
+    user-select: none;
+}
+
+div.seperator {
+    background-color: #252575;
+    border-radius: 5px;
+    width: 90%;
+    height: 5px;
+    margin: auto;
+}
+
+.comment {
+    color: green;
+}
+
+h2.nextPage {
+    background-color: #555585;
+    border-color: #454575;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 65%;
+    transition: 0.2s;
+}
+
+h2.nextPage:hover {
+    box-shadow: 5px 5px 10px #8585c5;
+}
+
+h2.prevPage {
+    background-color: #855555;
+    border-color: #754545;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 65%;
+    transition: 0.2s;
+    transform: translateX(-475px) translateY(-68px);
+}
+
+h2.prevPage:hover {
+    box-shadow: 5px 5px 10px #c58585;
+}

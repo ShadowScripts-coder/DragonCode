@@ -17,4 +17,16 @@ function changeLang(trg) {
     if (trg == "en") {
         location.href = "../en/";
     }
+    if (trg == "en frm 2") {
+        location.href = "../../en/";
+    }
+    if (trg == "en/py") {
+        location.href = "../en/python";
+    }
+    if (trg == "en/py/3") {
+        location.href = "../../../en/python";
+    }
+    if (trg == "en/py/pygame") {
+        location.href = "../../en/python/pygame";
+    }
 }
